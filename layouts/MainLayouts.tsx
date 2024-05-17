@@ -26,6 +26,8 @@ const MainLayouts = ({ children, link }: ILayouts) => {
     }
   };
     const [schoolName, setSchoolName] = useState<string>();
+    const [schoolURL, setSchoolURL] = useState<string>();
+
     useEffect(() => {
         async function getSchool() {
             await instance
@@ -39,6 +41,7 @@ const MainLayouts = ({ children, link }: ILayouts) => {
                 .then((res?: any) => {
                     if (res) {
                         setSchoolName(res?.school_name)
+                        setSchoolURL(res?.school_url);
                     }
                 });
         }
@@ -78,15 +81,19 @@ const MainLayouts = ({ children, link }: ILayouts) => {
                         </Link>
                     )
                 }
-                <div
-                    style={{
-                        fontSize: "1.6rem",
-                        color: "#060C3C",
-                        fontWeight: "600",
-                    }}
-                >
-                    {schoolName}
-                </div>
+                <Link href={`https://my.kestesi.kz/${schoolURL}`}>
+                    <div
+                        style={{
+                            fontSize: "1.6rem",
+                            color: "#060C3C",
+                            fontWeight: "600",
+                        }}
+                    >
+                        {schoolName}
+
+                    </div>
+                </Link>
+
                 <ButtonLogout onClick={onLogout}>
                     <LogoutIcons/>
                     {t.exit.action}
