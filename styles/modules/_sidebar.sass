@@ -1,0 +1,48 @@
+.sidebar
+    position: fixed
+    top: 30px
+    left: 20px
+    height: 100vh
+    width: 250px
+
+
+    &_top
+        font-size: 3.2rem
+        font-weight: 500
+        height: 5vh
+        margin-bottom: 3.2rem
+
+
+    &_links
+        height: 80vh
+        overflow-y: auto
+
+        &::-webkit-scrollbar
+            width: 5px
+            height: 8px
+            background-color: white
+
+        &::-webkit-scrollbar-thumb
+            background: #aaa
+
+
+        a
+            display: block
+            width: 100%
+
+            font-size: 2rem
+            font-weight: 500
+
+            padding-block: 1.6rem
+            padding-left: 1rem
+            border-radius: 8px
+
+            transition: background-color .2s linear, color .2s linear
+
+            &:hover
+                background-color: #4090FF
+                color: white
+
+            &.active
+                background-color: #4090FF
+                color: white

@@ -1,0 +1,103 @@
+// FlexBox
+
+.flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.flex-grid
+    display: grid
+    grid-template-columns: 100%
+    align-items: center
+    gap: 3%
+    margin-bottom: 1.3rem
+
+    .login_forms-label_pink
+        margin-bottom: 0
+
+.flex-grid-20
+    display: grid
+    grid-template-columns: 20ch auto
+    align-items: center
+
+    margin-bottom: 1.3rem
+
+    .login_forms-label_pink
+        margin-bottom: 0
+
+.flex-end
+    display: flex
+    justify-content: flex-end
+
+
+
+// margin
+.mb-0
+    margin-bottom: 0!important
+
+// Images
+
+.img-block
+    width: 100px
+    height: 100px
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: contain
+
+
+.file-list
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    width: 100%
+    height: 30vh
+    &__container
+        width: 100%
+        height: 100%
+        overflow: auto
+        display: flex
+        flex-direction: column
+        gap: 1rem
+.file-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 5px
+    border: 1px solid black
+    border-radius: 8px
+    position: relative
+    width: 80%
+    overflow: hidden
+    padding-block: 1.5rem
+    padding-inline: 1.5rem
+    .file-info
+        display: flex
+        flex-direction: column
+        gap: 0.25rem
+        flex: 1
+
+        p
+            margin: 0
+            font-size: 14px
+            color: #333
+
+    .file-actions
+        cursor: pointer
+        position: absolute
+        right: 0
+        z-index: 100
+        background-color: #F4F4F4
+        height: 100%
+        display: flex
+        align-items: center
+        border-radius: 8px
+
+        svg
+            font-size: 16px
+            color: #888
+
+        &:hover
+            svg
+                color: #d44
