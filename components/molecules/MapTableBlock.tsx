@@ -229,7 +229,7 @@ const MapTableBlock: FC<IProps> = ({ onReject, getId, mapId, onEdit }) => {
                                                        onChange={(event) => {
                                                            return setFlat1(event?.target?.files?.[0]);
                                                        }}
-                                                       accept=".svg"
+                                                       accept=".svg, .jpg, .jpeg, png"
                                                 />
                                             )
 
@@ -252,7 +252,7 @@ const MapTableBlock: FC<IProps> = ({ onReject, getId, mapId, onEdit }) => {
                                            onChange={(event) => {
                                                return setFlat2(event?.target?.files?.[0]);
                                            }}
-                                           accept=".svg"
+                                           accept=".svg, .jpg, .jpeg, png"
                                     />
                                     )
                                     }
@@ -274,7 +274,7 @@ const MapTableBlock: FC<IProps> = ({ onReject, getId, mapId, onEdit }) => {
                                                        onChange={(event) => {
                                                            return setFlat3(event?.target?.files?.[0]);
                                                        }}
-                                                       accept=".svg"
+                                                       accept=".svg, .jpg, .jpeg, png"
                                                 />
                                             )
                                     }
@@ -296,7 +296,7 @@ const MapTableBlock: FC<IProps> = ({ onReject, getId, mapId, onEdit }) => {
                                                        onChange={(event) => {
                                                            return setFlat4(event?.target?.files?.[0]);
                                                        }}
-                                                       accept=".svg"
+                                                       accept=".svg, .jpg, .jpeg, png"
                                                 />
                                             )
                                     }
@@ -318,7 +318,7 @@ const MapTableBlock: FC<IProps> = ({ onReject, getId, mapId, onEdit }) => {
                                                        onChange={(event) => {
                                                            return setFlat5(event?.target?.files?.[0]);
                                                        }}
-                                                       accept=".svg"
+                                                       accept=".svg, .jpg, .jpeg, png"
                                                 />
                                             )
                                     }
