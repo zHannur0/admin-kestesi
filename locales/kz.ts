@@ -200,7 +200,7 @@ export const kz = {
 
     },subjects: {
         subjectName: "Пән атауы",
-        classLevel: "Сабақтың деңгейі",
+        classLevel: "Сабақтың маңызы",
         delete: "Өшіру",
         save: "Сақтау",
         close: "Жабу",
@@ -208,7 +208,9 @@ export const kz = {
         action: "Іс-әрекет",
         success: "Сәтті өтті",
         dataSaved: "Толтырылған дереккөзі сәтті сақталды",
-        title: "Пәндер"
+        title: "Пәндер",
+        variant: "Міндетті",
+        invariant: "Міндетті емес"
     },
     teachers: {
         fullName: "Аты-жөні",

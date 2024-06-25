@@ -202,7 +202,7 @@
             title: "Гордости школы"
         },subjects: {
             subjectName: "Название предмета",
-            classLevel: "Уровень занятий",
+            classLevel: "Важность занятий",
             delete: "Удалить",
             save: "Сохранить",
             close: "Закрыть",
@@ -210,8 +210,9 @@
             action: "Действие",
             success: "Успешно прошел",
             dataSaved: "Заполненные данные успешно сохранены",
-            title: "Предметы"
-
+            title: "Предметы",
+            variant: "Обязательно",
+            invariant: "Необязательно"
         },teachers: {
             fullName: "ФИО",
             photo: "Фото",

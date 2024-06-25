@@ -173,10 +173,9 @@ const LessonsTableBlock: FC<IProps> = ({
                 <div className="sanaty">
                   <div className="login_forms-label_pink">{t.subjects.classLevel}</div>
                   <Select {...formik.getFieldProps("sanat")}>
-                    <option value="EASY">EASY</option>
-                    {timeArr.map((item) => (
-                      <option value={item.type}>{item.type}</option>
-                    ))}
+                    <option value=""></option>
+                    <option value="VARIANT">{t.subjects.variant}</option>
+                    <option value="INVARIANT">{t.subjects.invariant}</option>
                   </Select>
                 </div>
               </div>
