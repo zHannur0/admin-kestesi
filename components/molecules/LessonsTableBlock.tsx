@@ -66,7 +66,7 @@ const LessonsTableBlock: FC<IProps> = ({
             "https://www.bilimge.kz/admins/api/subject/",
             {
               full_name: values.name,
-              type: values.sanat,
+              type: null,
             },
             {
               headers: {
@@ -96,7 +96,7 @@ const LessonsTableBlock: FC<IProps> = ({
             `https://www.bilimge.kz/admins/api/subject/${getId}/`,
             {
               full_name: values.name,
-              type: values.sanat,
+              type: null,
             },
             {
               headers: {
@@ -170,14 +170,14 @@ const LessonsTableBlock: FC<IProps> = ({
                     }}
                   />
                 </div>
-                <div className="sanaty">
-                  <div className="login_forms-label_pink">{t.subjects.classLevel}</div>
-                  <Select {...formik.getFieldProps("sanat")}>
-                    <option value=""></option>
-                    <option value="VARIANT">{t.subjects.variant}</option>
-                    <option value="INVARIANT">{t.subjects.invariant}</option>
-                  </Select>
-                </div>
+                {/*<div className="sanaty">*/}
+                {/*  <div className="login_forms-label_pink">{t.subjects.classLevel}</div>*/}
+                {/*  <Select {...formik.getFieldProps("sanat")}>*/}
+                {/*    <option value=""></option>*/}
+                {/*    <option value="VARIANT">{t.subjects.variant}</option>*/}
+                {/*    <option value="INVARIANT">{t.subjects.invariant}</option>*/}
+                {/*  </Select>*/}
+                {/*</div>*/}
               </div>
             </div>
           </div>
